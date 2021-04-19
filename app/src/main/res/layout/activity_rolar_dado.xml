@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cinza"
+    android:padding="16dp"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:src="@drawable/mundonerd"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginLeft="48dp"
+        android:backgroundTint="@color/azul"
+        android:textAlignment="center"
+        android:onClick="sortearZeroAoSeis"
+        android:text="0 a 6"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginLeft="48dp"
+        android:backgroundTint="@color/azul"
+        android:textAlignment="center"
+        android:onClick="sortearZeroAoDoze"
+        android:text="0 a 12"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginLeft="48dp"
+        android:backgroundTint="@color/azul"
+        android:textAlignment="center"
+        android:onClick="sortearZeroAoVinte"
+        android:text="0 a 20"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginLeft="48dp"
+        android:backgroundTint="@color/azul"
+        android:textAlignment="center"
+        android:onClick="sortearZeroAteCem"
+        android:text="0 a 100"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="..."
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:id="@+id/txtResultadoDado"/>
+
+</LinearLayout>

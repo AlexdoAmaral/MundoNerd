@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cinza"
+    android:padding="16dp"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:src="@drawable/mundonerd"/>
+
+    <Button
+        android:id="@+id/btnGerarFrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginLeft="48dp"
+        android:onClick="gerarNovaFrase"
+        android:backgroundTint="@color/azul"
+        android:textAlignment="center"
+        android:text="Gerar uma frase"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        android:text="..."
+        android:id="@+id/txtFraseGerada"/>
+
+</LinearLayout>
